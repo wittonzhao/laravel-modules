@@ -40,6 +40,11 @@ class UseCommand extends Command
         $this->info("Module [{$module}] used successfully.");
     }
 
+    public function handle()
+    {
+        $this->fire();
+    }
+
     /**
      * Get the console command arguments.
      *

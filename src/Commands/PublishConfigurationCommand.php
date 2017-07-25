@@ -38,6 +38,11 @@ class PublishConfigurationCommand extends Command
         }
     }
 
+    public function handle()
+    {
+        $this->fire();
+    }
+
     /**
      * @param string $module
      * @return string

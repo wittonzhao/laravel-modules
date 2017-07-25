@@ -29,6 +29,11 @@ class ListCommand extends Command
         $this->table(['Name', 'Status', 'Order', 'Path'], $this->getRows());
     }
 
+    public function handle()
+    {
+        $this->fire();
+    }
+
     /**
      * Get table rows.
      *

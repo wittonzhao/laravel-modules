@@ -37,6 +37,11 @@ class DumpCommand extends Command
         }
     }
 
+    public function handle()
+    {
+        $this->fire();
+    }
+
     public function dump($module)
     {
         $module = $this->laravel['modules']->findOrFail($module);

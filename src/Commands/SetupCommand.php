@@ -30,6 +30,11 @@ class SetupCommand extends Command
         $this->generateAssetsFolder();
     }
 
+    public function handle()
+    {
+        $this->fire();
+    }
+
     /**
      * Generate the modules folder.
      */

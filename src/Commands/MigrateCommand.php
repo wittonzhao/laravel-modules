@@ -53,6 +53,11 @@ class MigrateCommand extends Command
         }
     }
 
+    public function handle()
+    {
+        $this->fire();
+    }
+
     /**
      * Run the migration from the specified module.
      *

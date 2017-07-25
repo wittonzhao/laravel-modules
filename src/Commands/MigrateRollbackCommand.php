@@ -53,6 +53,11 @@ class MigrateRollbackCommand extends Command
         }
     }
 
+    public function handle()
+    {
+        $this->fire();
+    }
+
     /**
      * Rollback migration from the specified module.
      *

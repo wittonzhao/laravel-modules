@@ -41,6 +41,11 @@ class PublishMigrationCommand extends Command
         }
     }
 
+    public function handle()
+    {
+        $this->fire();
+    }
+
     /**
      * Publish migration for the specified module.
      *
